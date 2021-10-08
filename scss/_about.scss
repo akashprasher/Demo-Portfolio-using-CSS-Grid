@@ -1,0 +1,100 @@
+.about {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+
+  &__content {
+    grid-column: 1 / span 2;
+    display: flex;
+    flex-direction: column;
+    padding: 5rem 2rem;
+    background-color: #dddddd;
+
+    h1 {
+      color: #242424;
+      font-size: 2rem;
+      font-weight: 400;
+    }
+
+    p {
+      color: #555555;
+      padding-top: 0.5rem;
+    }
+
+    .heighlight {
+      color: #db5e0a;
+      padding-bottom: 1rem;
+    }
+  }
+  &__image {
+    background-image: url("https://images.unsplash.com/photo-1512850958844-70d66581e2b7?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80");
+    background-position: center;
+  }
+  &__skills {
+    padding: 2rem 2rem;
+    background-color: #ecaf4e;
+    color: #fcfcfc;
+
+    h1 {
+      font-size: 2rem;
+      font-weight: 400;
+    }
+
+    &__divs {
+      display: grid;
+      width: 100%;
+      grid-template-columns: repeat(2, 1fr);
+      grid-template-rows: 30px 5px;
+      margin-top: 2rem;
+      p {
+        color: #242424;
+        height: 25px;
+      }
+
+      .percentage {
+        text-align: right;
+      }
+
+      input {
+        grid-column: 1 / span 2;
+      }
+
+      .slider-1,
+      .slider-2,
+      .slider-3 {
+        -webkit-appearance: none;
+        outline: none;
+        cursor: none;
+        border-radius: 5px;
+      }
+
+      .slider-1::-webkit-slider-thumb,
+      .slider-2::-webkit-slider-thumb,
+      .slider-3::-webkit-slider-thumb {
+        border-radius: 5px;
+        -webkit-appearance: none;
+        appearance: none;
+        height: 6px;
+        background: #242424;
+        float: left;
+      }
+      .slider-1::-webkit-slider-thumb {
+        width: 90%;
+      }
+      .slider-2::-webkit-slider-thumb {
+        width: 70%;
+      }
+      .slider-3::-webkit-slider-thumb {
+        width: 80%;
+      }
+    }
+  }
+  &__interface-desing {
+  }
+  &__media {
+  }
+  &__mobile {
+  }
+  &__coding {
+  }
+}

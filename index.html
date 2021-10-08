@@ -9,7 +9,7 @@
   </head>
   <body>
     <nav class="navigation">
-      <h1 class="navigation__logo">Peter.</h1>
+      <h1 class="navigation__logo">Peter<span>.</span></h1>
       <ul class="navigation__links">
         <li class="navigation__link active">
           <a class="active" href="#!">Home</a>
@@ -20,25 +20,68 @@
         <li class="navigation__link"><a href="#!">Contact</a></li>
       </ul>
     </nav>
-    <section class="hero">
-      <div class="hero__image"></div>
-      <div class="hero__content">
-        <div>
-          <h4>WELCOME TO MY WEBSITE</h4>
-          <h1>
-            Hello, I am <span>Peter</span> currently based in New York city.
-          </h1>
-          <p>
-            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Soluta
-            blanditiis numquam quisquam dicta eveniet autem dolore nihil.
-            Doloremque blanditiis, asperiores laborum fugit ad quia illo libero
-            quod eveniet, facere facilis.
-          </p>
-          <button class="btn">Get Started</button>
+
+    <main>
+      <section class="hero">
+        <div class="hero__image"></div>
+        <div class="hero__content">
+          <div>
+            <h4>WELCOME TO MY WEBSITE</h4>
+            <h1>
+              Hello, I am <span>Peter</span> currently based in New York city.
+            </h1>
+            <p>
+              Lorem ipsum dolor sit amet consectetur, adipisicing elit. Soluta
+              blanditiis numquam quisquam dicta eveniet autem dolore nihil.
+              Doloremque blanditiis, asperiores laborum fugit ad quia illo
+              libero quod eveniet, facere facilis.
+            </p>
+            <button class="btn">Get Started</button>
+          </div>
         </div>
-      </div>
-    </section>
-    <section class="hero"></section>
+      </section>
+
+      <section class="about">
+        <div class="about__content">
+          <h1>About me</h1>
+          <p class="heighlight">Lorem ipsum dolor sit, amet consectetur.</p>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem
+            dignissimos mollitia laudantium error..
+          </p>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam,
+            dolores accusantium. Laboriosam quis nam voluptate soluta?
+          </p>
+        </div>
+        <div class="about__image"></div>
+        <div class="about__skills">
+          <h1>My Skills</h1>
+          <p>Photoshop, HTML, CSS, JavaScript</p>
+          <div class="about__skills__divs">
+            <p>Frontend Design</p>
+            <p class="percentage">90%</p>
+            <input type="range" class="slider-1" />
+          </div>
+
+          <div class="about__skills__divs">
+            <p>Backend</p>
+            <p class="percentage">70%</p>
+            <input type="range" class="slider-2" />
+          </div>
+
+          <div class="about__skills__divs">
+            <p>HTML5 and CSS3</p>
+            <p class="percentage">80%</p>
+            <input type="range" class="slider-3" />
+          </div>
+        </div>
+        <div class="about__interface-design"></div>
+        <div class="about__media"></div>
+        <div class="about__mobile"></div>
+        <div class="about__coding"></div>
+      </section>
+    </main>
     <script src="./js/main.js"></script>
   </body>
 </html>

@@ -23,12 +23,16 @@ body {
   color: #130f0b;
 }
 
+.navigation__logo span {
+  color: #ecaf4e;
+}
+
 .navigation__links {
   display: flex;
 }
 
 .navigation__links .active {
-  color: #ccb220;
+  color: #ecaf4e;
   font-weight: 600;
 }
 
@@ -38,7 +42,7 @@ body {
 }
 
 .navigation__links a:hover {
-  box-shadow: 0px 3px #ccb220;
+  box-shadow: 0px 3px #ecaf4e;
   transition: ease-in-out 0.5s;
 }
 
@@ -110,4 +114,102 @@ body {
 .hero__content .btn:hover {
   background-color: #242424;
   color: #f0f0f0;
+}
+
+.about {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+}
+
+.about__content {
+  grid-column: 1 / span 2;
+  display: flex;
+  flex-direction: column;
+  padding: 5rem 2rem;
+  background-color: #dddddd;
+}
+
+.about__content h1 {
+  color: #242424;
+  font-size: 2rem;
+  font-weight: 400;
+}
+
+.about__content p {
+  color: #555555;
+  padding-top: 0.5rem;
+}
+
+.about__content .heighlight {
+  color: #db5e0a;
+  padding-bottom: 1rem;
+}
+
+.about__image {
+  background-image: url("https://images.unsplash.com/photo-1512850958844-70d66581e2b7?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80");
+  background-position: center;
+}
+
+.about__skills {
+  padding: 2rem 2rem;
+  background-color: #ecaf4e;
+  color: #fcfcfc;
+}
+
+.about__skills h1 {
+  font-size: 2rem;
+  font-weight: 400;
+}
+
+.about__skills__divs {
+  display: grid;
+  width: 100%;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: 30px 5px;
+  margin-top: 2rem;
+}
+
+.about__skills__divs p {
+  color: #242424;
+  height: 25px;
+}
+
+.about__skills__divs .percentage {
+  text-align: right;
+}
+
+.about__skills__divs input {
+  grid-column: 1 / span 2;
+}
+
+.about__skills__divs .slider-1,
+.about__skills__divs .slider-2,
+.about__skills__divs .slider-3 {
+  -webkit-appearance: none;
+  outline: none;
+  cursor: none;
+  border-radius: 5px;
+}
+
+.about__skills__divs .slider-1::-webkit-slider-thumb,
+.about__skills__divs .slider-2::-webkit-slider-thumb,
+.about__skills__divs .slider-3::-webkit-slider-thumb {
+  border-radius: 5px;
+  appearance: none;
+  height: 6px;
+  background: #242424;
+  float: left;
+}
+
+.about__skills__divs .slider-1::-webkit-slider-thumb {
+  width: 90%;
+}
+
+.about__skills__divs .slider-2::-webkit-slider-thumb {
+  width: 70%;
+}
+
+.about__skills__divs .slider-3::-webkit-slider-thumb {
+  width: 80%;
 }

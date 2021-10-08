@@ -10,13 +10,16 @@
 
   &__logo {
     color: #130f0b;
+    span {
+      color: #ecaf4e;
+    }
   }
 
   &__links {
     display: flex;
 
     .active {
-      color: #ccb220;
+      color: #ecaf4e;
       font-weight: 600;
     }
 
@@ -25,7 +28,7 @@
       color: #383838;
 
       &:hover {
-        box-shadow: 0px 3px #ccb220;
+        box-shadow: 0px 3px #ecaf4e;
         transition: ease-in-out 0.5s;
       }
     }
