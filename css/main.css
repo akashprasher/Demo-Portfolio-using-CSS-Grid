@@ -10,7 +10,7 @@ body {
 }
 
 .navigation {
-  padding: 0vw 15vw;
+  padding: 0vw 10vw;
   height: 10vh;
   display: flex;
   place-items: center;
@@ -20,7 +20,7 @@ body {
 }
 
 .navigation__logo {
-  color: #222222;
+  color: #130f0b;
 }
 
 .navigation__links {
@@ -39,11 +39,6 @@ body {
   text-transform: uppercase;
 }
 
-.hero {
-  height: 100vh;
-  background-color: #ebfbff;
-}
-
 .menu {
   transition: all ease-in 0.2s;
   position: fixed;
@@ -54,4 +49,48 @@ body {
 .menu-mid {
   transition: all ease-in 0.5s;
   margin-top: -100px;
+}
+
+.hero {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  height: 100vh;
+  background-color: #e7d8cf;
+}
+
+.hero__image {
+  background-image: url("https://images.unsplash.com/photo-1512850692650-c382e34f7fb2?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format");
+  background-size: cover;
+  background-position: center;
+}
+
+.hero__content {
+  padding: 5rem 2rem;
+  display: flex;
+  place-items: center;
+  color: #555555;
+}
+
+.hero__content h1 {
+  font-size: 2.8rem;
+  font-weight: 400;
+  color: #242424;
+  padding: 2rem 0rem;
+  line-height: 3rem;
+}
+
+.hero__content h1 span {
+  font-weight: 600;
+}
+
+.hero__content p {
+  padding-bottom: 4rem;
+}
+
+.hero__content .btn {
+  padding: 1em 2rem;
+  border: 3px solid #242424;
+  background-color: transparent;
+  border-radius: 25rem;
+  font-weight: 600;
 }

@@ -1,5 +1,5 @@
 .navigation {
-  padding: 0vw 15vw;
+  padding: 0vw 10vw;
   height: 10vh;
   display: flex;
   place-items: center;
@@ -9,7 +9,7 @@
   width: 100%;
 
   &__logo {
-    color: #222222;
+    color: #130f0b;
   }
 
   &__links {
@@ -27,11 +27,6 @@
     color: #383838;
     text-transform: uppercase;
   }
-}
-
-.hero {
-  height: 100vh;
-  background-color: #ebfbff;
 }
 
 .menu {
