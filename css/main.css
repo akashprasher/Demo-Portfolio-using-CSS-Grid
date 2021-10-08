@@ -142,7 +142,7 @@ body {
 }
 
 .about__content .heighlight {
-  color: #db5e0a;
+  color: #fc683e;
   padding-bottom: 1rem;
 }
 
@@ -152,7 +152,7 @@ body {
 }
 
 .about__skills {
-  padding: 2rem 2rem;
+  padding: 2rem;
   background-color: #ecaf4e;
   color: #fcfcfc;
 }
@@ -212,4 +212,46 @@ body {
 
 .about__skills__divs .slider-3::-webkit-slider-thumb {
   width: 80%;
+}
+
+.about__interface-design, .about__media, .about__mobile, .about__coding {
+  background-color: #ecaf4e;
+  padding: 2rem;
+  text-align: center;
+  color: #fcfcfc;
+}
+
+.about__interface-design i, .about__media i, .about__mobile i, .about__coding i {
+  padding: 2rem 1rem;
+}
+
+.about__interface-design h2, .about__media h2, .about__mobile h2, .about__coding h2 {
+  font-weight: 400;
+  padding-bottom: 1rem;
+}
+
+.about__interface-design .btn, .about__media .btn, .about__mobile .btn, .about__coding .btn {
+  padding: 1em 2em;
+  margin-top: 1em;
+  border: none;
+  border-radius: 5px;
+  background-color: #dddddd;
+}
+
+.about__interface-design .btn:hover, .about__media .btn:hover, .about__mobile .btn:hover, .about__coding .btn:hover {
+  transition: transform 0.5s;
+  transform: scale(1.03);
+}
+
+.about__media {
+  background-color: #fc683e;
+}
+
+.about__mobile {
+  background: #242424;
+}
+
+.about__coding {
+  color: #555555;
+  background-color: #fcfcfc;
 }

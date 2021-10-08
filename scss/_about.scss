@@ -22,7 +22,7 @@
     }
 
     .heighlight {
-      color: #db5e0a;
+      color: #fc683e;
       padding-bottom: 1rem;
     }
   }
@@ -31,7 +31,7 @@
     background-position: center;
   }
   &__skills {
-    padding: 2rem 2rem;
+    padding: 2rem;
     background-color: #ecaf4e;
     color: #fcfcfc;
 
@@ -89,12 +89,45 @@
       }
     }
   }
-  &__interface-desing {
+  &__interface-design {
+    background-color: #ecaf4e;
+    padding: 2rem;
+    text-align: center;
+    color: #fcfcfc;
+
+    i {
+      padding: 2rem 1rem;
+    }
+
+    h2 {
+      font-weight: 400;
+      padding-bottom: 1rem;
+    }
+
+    .btn {
+      padding: 1em 2em;
+      margin-top: 1em;
+      border: none;
+      border-radius: 5px;
+      background-color: #dddddd;
+
+      &:hover {
+        transition: transform 0.5s;
+        transform: scale(1.03);
+      }
+    }
   }
   &__media {
+    @extend .about__interface-design;
+    background-color: #fc683e;
   }
   &__mobile {
+    @extend .about__interface-design;
+    background: #242424;
   }
   &__coding {
+    @extend .about__interface-design;
+    color: #555555;
+    background-color: #fcfcfc;
   }
 }
