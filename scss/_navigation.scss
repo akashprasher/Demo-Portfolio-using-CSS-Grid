@@ -1,0 +1,49 @@
+.navigation {
+  padding: 0vw 15vw;
+  height: 10vh;
+  display: flex;
+  place-items: center;
+  justify-content: space-between;
+
+  position: absolute;
+  width: 100%;
+
+  &__logo {
+    color: #222222;
+  }
+
+  &__links {
+    display: flex;
+
+    .active {
+      color: #ccb220;
+      font-weight: 600;
+    }
+  }
+
+  &__link {
+    list-style: none;
+    padding-left: 1rem;
+    color: #383838;
+    text-transform: uppercase;
+  }
+}
+
+.hero {
+  height: 100vh;
+  background-color: #ebfbff;
+}
+
+.menu {
+  transition: all ease-in 0.2s;
+  position: fixed;
+  background-color: #ffffffbe;
+  margin: 0;
+  //   transform: translateY(0px);
+}
+
+.menu-mid {
+  transition: all ease-in 0.5s;
+  //   transform: translateY(-100px);
+  margin-top: -100px;
+}
