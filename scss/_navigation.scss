@@ -19,12 +19,22 @@
       color: #ccb220;
       font-weight: 600;
     }
+
+    a {
+      text-decoration: none;
+      color: #383838;
+
+      &:hover {
+        box-shadow: 0px 3px #ccb220;
+        transition: ease-in-out 0.5s;
+      }
+    }
   }
 
   &__link {
+    cursor: pointer;
     list-style: none;
     padding-left: 1rem;
-    color: #383838;
     text-transform: uppercase;
   }
 }
@@ -32,7 +42,7 @@
 .menu {
   transition: all ease-in 0.2s;
   position: fixed;
-  background-color: #ffffffbe;
+  background-color: #ffffffde;
   margin: 0;
   //   transform: translateY(0px);
 }

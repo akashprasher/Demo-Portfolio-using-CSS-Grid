@@ -32,17 +32,27 @@ body {
   font-weight: 600;
 }
 
+.navigation__links a {
+  text-decoration: none;
+  color: #383838;
+}
+
+.navigation__links a:hover {
+  box-shadow: 0px 3px #ccb220;
+  transition: ease-in-out 0.5s;
+}
+
 .navigation__link {
+  cursor: pointer;
   list-style: none;
   padding-left: 1rem;
-  color: #383838;
   text-transform: uppercase;
 }
 
 .menu {
   transition: all ease-in 0.2s;
   position: fixed;
-  background-color: #ffffffbe;
+  background-color: #ffffffde;
   margin: 0;
 }
 
@@ -93,4 +103,11 @@ body {
   background-color: transparent;
   border-radius: 25rem;
   font-weight: 600;
+  transition: ease-in 0.3s;
+  cursor: pointer;
+}
+
+.hero__content .btn:hover {
+  background-color: #242424;
+  color: #f0f0f0;
 }
