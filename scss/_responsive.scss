@@ -1,0 +1,96 @@
+@include screen-md {
+  .navigation {
+    &__links {
+      display: none;
+    }
+
+    .hamburger {
+      display: inline;
+    }
+  }
+
+  .hero {
+    grid-template-columns: repeat(1, 1fr);
+
+    &__image {
+      height: 50vh;
+    }
+  }
+
+  .about {
+    grid-template-rows: repeat(4, 1fr);
+
+    &__content {
+      grid-column: 1 / span 4;
+    }
+
+    &__image {
+      grid-column: 1 / span 2;
+    }
+
+    &__skills {
+      grid-column: 3 / span 4;
+    }
+
+    &__interface-design,
+    &__mobile {
+      grid-column: 1 / span 2;
+    }
+
+    &__media,
+    &__coding {
+      grid-column: 3 / span 4;
+    }
+  }
+
+  .contact {
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+
+    &__form,
+    &__address {
+      grid-column: 1 / span 1;
+    }
+
+    &__image,
+    &__map {
+      grid-column: 2 / span 2;
+    }
+  }
+}
+
+@include screen-md {
+  .hero {
+    &__content {
+      padding: 1rem 2rem;
+    }
+  }
+
+  .about {
+    &__skills {
+      &__divs {
+        p {
+          font-size: 0.7rem;
+        }
+      }
+    }
+  }
+
+  .experience {
+    grid-template-columns: repeat(1, 1fr);
+    grid-template-rows: repeat(4, 1fr);
+
+    &__qual {
+      grid-row: 4 / span 4;
+    }
+  }
+
+  .contact {
+    grid-template-rows: repeat(3, 1fr);
+
+    &__address,
+    &__map {
+      grid-column: 1 / span 2;
+    }
+  }
+}

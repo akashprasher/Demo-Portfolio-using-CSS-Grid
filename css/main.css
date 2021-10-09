@@ -66,6 +66,56 @@ body {
   margin-top: -100px;
 }
 
+.hamburger {
+  display: none;
+  width: 20px;
+  height: 3px;
+  background: #ecaf4e;
+  position: relative;
+  cursor: pointer;
+  transition: transform 0.2s;
+}
+
+.hamburger:before {
+  top: -8px;
+}
+
+.hamburger:after {
+  top: 8px;
+}
+
+.hamburger-one:before {
+  width: 10px;
+}
+
+.hamburger-one:after {
+  width: 30px;
+}
+
+.hamburger-one:before,
+.hamburger-one:after {
+  content: "";
+  position: absolute;
+  height: 3px;
+  background: #ecaf4e;
+  transition: 0.5s;
+}
+
+.ham-rotate {
+  transform: rotate(180deg);
+  background: transparent;
+}
+
+.ham-rotate::before {
+  transform: rotate(-45deg) translate(-6px, 7px);
+  width: 25px;
+}
+
+.ham-rotate::after {
+  transform: rotate(45deg) translate(-5px, -5px);
+  width: 25px;
+}
+
 .hero {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
@@ -471,4 +521,69 @@ body {
 .footer__icons i:hover {
   transform: 0.4s;
   color: #ecaf4e;
+}
+
+@media screen and (max-width: 768px) {
+  .navigation__links {
+    display: none;
+  }
+  .navigation .hamburger {
+    display: inline;
+  }
+  .hero {
+    grid-template-columns: repeat(1, 1fr);
+  }
+  .hero__image {
+    height: 50vh;
+  }
+  .about {
+    grid-template-rows: repeat(4, 1fr);
+  }
+  .about__content {
+    grid-column: 1 / span 4;
+  }
+  .about__image {
+    grid-column: 1 / span 2;
+  }
+  .about__skills {
+    grid-column: 3 / span 4;
+  }
+  .about__interface-design, .about__media, .about__mobile, .about__coding, .about__mobile {
+    grid-column: 1 / span 2;
+  }
+  .about__media, .about__coding {
+    grid-column: 3 / span 4;
+  }
+  .contact {
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+  }
+  .contact__form, .contact__address {
+    grid-column: 1 / span 1;
+  }
+  .contact__image, .contact__map {
+    grid-column: 2 / span 2;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .hero__content {
+    padding: 1rem 2rem;
+  }
+  .about__skills__divs p {
+    font-size: 0.7rem;
+  }
+  .experience {
+    grid-template-columns: repeat(1, 1fr);
+    grid-template-rows: repeat(4, 1fr);
+  }
+  .experience__qual {
+    grid-row: 4 / span 4;
+  }
+  .contact {
+    grid-template-rows: repeat(3, 1fr);
+  }
+  .contact__address, .contact__map {
+    grid-column: 1 / span 2;
+  }
 }
