@@ -1,0 +1,30 @@
+// #ecaf4e;#fc683e
+
+.footer {
+  text-align: center;
+  padding: 8rem 0rem;
+  color: #b3b3b3;
+
+  &__heading {
+    font-weight: 400;
+
+    a {
+      color: #ecaf4e;
+      text-decoration: none;
+    }
+  }
+
+  &__icons {
+    padding: 2rem 0rem;
+
+    i {
+      padding: 0rem 1rem;
+      cursor: pointer;
+
+      &:hover {
+        transform: 0.4s;
+        color: #ecaf4e;
+      }
+    }
+  }
+}

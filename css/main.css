@@ -443,3 +443,32 @@ body {
   grid-column: 1 / span 4;
   padding: 1rem 4rem;
 }
+
+.footer {
+  text-align: center;
+  padding: 8rem 0rem;
+  color: #b3b3b3;
+}
+
+.footer__heading {
+  font-weight: 400;
+}
+
+.footer__heading a {
+  color: #ecaf4e;
+  text-decoration: none;
+}
+
+.footer__icons {
+  padding: 2rem 0rem;
+}
+
+.footer__icons i {
+  padding: 0rem 1rem;
+  cursor: pointer;
+}
+
+.footer__icons i:hover {
+  transform: 0.4s;
+  color: #ecaf4e;
+}
