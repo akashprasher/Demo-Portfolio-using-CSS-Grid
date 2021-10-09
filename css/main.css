@@ -325,3 +325,94 @@ body {
   background-image: url("    https://images.unsplash.com/photo-1514302240736-b1fee5985889?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=773&q=80");
   background-position: center;
 }
+
+.contact {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+}
+
+.contact__form {
+  grid-column: 1 / span 2;
+  padding: 2rem;
+  background-color: #fc683e;
+  color: #ffffff;
+}
+
+.contact__form h1 {
+  font-size: 2rem;
+  font-weight: 400;
+  padding-bottom: 0.6rem;
+}
+
+.contact__form form {
+  display: flex;
+  flex-direction: column;
+}
+
+.contact__form form input,
+.contact__form form textarea {
+  border: none;
+  margin: 2rem 0em;
+  background-color: transparent;
+  color: #ffffff;
+  box-shadow: 0px 2px #ecaf4e;
+  padding-bottom: 0.3em;
+  font-family: "Poppins", sans-serif;
+  font-size: 0.9rem;
+}
+
+.contact__form form input:focus-visible,
+.contact__form form textarea:focus-visible {
+  outline: -webkit-focus-ring-color auto 0px;
+}
+
+.contact__form form input:focus-visible::placeholder,
+.contact__form form textarea:focus-visible::placeholder {
+  transition: transform 0.5s;
+  transform: translateY(-20px);
+  z-index: 99;
+}
+
+.contact__form form ::placeholder {
+  color: #ffffff;
+  opacity: 1;
+}
+
+.contact__form form :-ms-input-placeholder,
+.contact__form form ::-ms-input-placeholder {
+  color: #ffffff;
+}
+
+.contact__form form button {
+  font-family: "Poppins", sans-serif;
+  font-size: 0.9rem;
+  color: #ffffff;
+  border: 1px solid #ffffff;
+  background: transparent;
+  border-radius: 30px;
+  width: auto;
+  padding: 1em 1em;
+  cursor: pointer;
+  transition: 0.5s;
+}
+
+.contact__form form button:hover {
+  background-color: #ffffff;
+  color: #000;
+}
+
+.contact__image {
+  background-image: url("https://images.unsplash.com/photo-1494607239400-ff147da48308?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=859&q=80");
+  background-position: right;
+  background-size: cover;
+}
+
+.contact__address {
+  background-color: #ffffff;
+}
+
+.contact__map {
+  grid-column: 1 / span 4;
+  padding: 1rem 4rem;
+}
