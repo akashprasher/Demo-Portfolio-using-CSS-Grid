@@ -566,9 +566,16 @@ body {
   }
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 540px) {
+  .hero {
+    height: auto;
+  }
   .hero__content {
     padding: 1rem 2rem;
+  }
+  .hero__content h1 {
+    font-size: 1.8rem;
+    line-height: 2rem;
   }
   .about__skills__divs p {
     font-size: 0.7rem;
@@ -585,5 +592,34 @@ body {
   }
   .contact__address, .contact__map {
     grid-column: 1 / span 2;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .about {
+    grid-template-rows: auto;
+  }
+  .about__image {
+    height: 50vh;
+  }
+  .about__image, .about__skills, .about__interface-design, .about__media, .about__mobile, .about__coding, .about__media, .about__mobile, .about__coding {
+    grid-column: 1 / span 7;
+  }
+  .experience {
+    grid-template-rows: auto;
+  }
+  .experience__image-ex, .experience__image-ql {
+    height: 30vh;
+  }
+  .contact {
+    grid-template-columns: repeat(1, 1fr);
+    grid-template-rows: auto;
+  }
+  .contact__image {
+    height: 30vh;
+    grid-column: 1 / span 1;
+  }
+  .contact__map {
+    height: 30vh;
   }
 }
