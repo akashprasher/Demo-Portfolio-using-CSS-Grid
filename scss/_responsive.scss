@@ -2,10 +2,29 @@
   .navigation {
     &__links {
       display: none;
+      transition: 1s;
     }
 
     .hamburger {
       display: inline;
+    }
+  }
+
+  .show-menu {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    position: absolute;
+    width: 100vw;
+    background: #fff;
+    top: 0px;
+    left: 0px;
+    place-content: center;
+    text-align: center;
+    transition: 1s;
+
+    li {
+      padding: 0.5rem 0rem;
     }
   }
 

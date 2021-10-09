@@ -526,9 +526,26 @@ body {
 @media screen and (max-width: 768px) {
   .navigation__links {
     display: none;
+    transition: 1s;
   }
   .navigation .hamburger {
     display: inline;
+  }
+  .show-menu {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    position: absolute;
+    width: 100vw;
+    background: #fff;
+    top: 0px;
+    left: 0px;
+    place-content: center;
+    text-align: center;
+    transition: 1s;
+  }
+  .show-menu li {
+    padding: 0.5rem 0rem;
   }
   .hero {
     grid-template-columns: repeat(1, 1fr);

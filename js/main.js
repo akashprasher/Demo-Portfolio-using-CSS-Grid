@@ -1,6 +1,7 @@
 // window.pageYOffset;
 let naviagtionMenu = document.querySelector(".navigation");
 let ham = document.querySelector(".hamburger");
+let navLinks = document.querySelector(".navigation__links");
 let hamClicked = false;
 
 window.addEventListener("scroll", () => {
@@ -21,9 +22,11 @@ window.addEventListener("scroll", () => {
 ham.addEventListener("click", () => {
   if (!hamClicked) {
     ham.classList.add("ham-rotate");
+    navLinks.classList.add("show-menu");
     hamClicked = true;
   } else {
     ham.classList.remove("ham-rotate");
+    navLinks.classList.remove("show-menu");
     hamClicked = false;
   }
 });
