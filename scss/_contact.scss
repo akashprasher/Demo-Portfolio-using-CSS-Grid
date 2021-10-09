@@ -76,9 +76,35 @@
     background-size: cover;
   }
   &__address {
-    background-color: #ffffff;
+    background-color: #242424;
+    color: #ffffff;
+    padding: 2rem;
+
+    h2 {
+      font-size: 1.5rem;
+      font-weight: 400;
+    }
+
+    p {
+      padding-top: 1rem;
+      color: #e7e7e7;
+    }
+
+    div {
+      padding: 1rem 0rem;
+
+      a,
+      i {
+        color: #ecaf4e;
+      }
+      a {
+        text-decoration: none;
+        padding-left: 1rem;
+      }
+    }
   }
   &__map {
+    background-color: #fc683e;
     grid-column: 1 / span 4;
     padding: 1rem 4rem;
   }
