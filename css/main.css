@@ -21,6 +21,7 @@ body {
 
 .navigation__logo {
   color: #130f0b;
+  cursor: pointer;
 }
 
 .navigation__logo span {
@@ -254,4 +255,73 @@ body {
 .about__coding {
   color: #555555;
   background-color: #fcfcfc;
+}
+
+.experience {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+}
+
+.experience__image-ex {
+  background-image: url("https://images.unsplash.com/photo-1519389950473-47ba0277781c?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=870&q=80");
+  background-position: center;
+}
+
+.experience__about {
+  background-color: #fc683e;
+  color: #ffffff;
+  padding: 4rem 2rem;
+}
+
+.experience__about h1 {
+  font-size: 2rem;
+  font-weight: 400;
+}
+
+.experience__about__job {
+  padding: 1rem 0rem;
+  display: flex;
+  place-items: center;
+}
+
+.experience__about__job i {
+  padding-right: 1rem;
+}
+
+.experience__about__job span {
+  color: #242424;
+  font-size: 0.9rem;
+  padding-left: 1rem;
+}
+
+.experience__qual {
+  background-color: #ecaf4e;
+  color: #ffffff;
+  padding: 4rem 2rem;
+}
+
+.experience__qual h1 {
+  font-size: 2rem;
+  font-weight: 400;
+}
+
+.experience__qual__job {
+  padding: 1rem 0rem;
+  display: flex;
+  place-items: center;
+}
+
+.experience__qual__job i {
+  padding-right: 1rem;
+}
+
+.experience__qual__job span {
+  color: #242424;
+  font-size: 0.9rem;
+  padding-left: 1rem;
+}
+
+.experience__image-ql {
+  background-image: url("    https://images.unsplash.com/photo-1514302240736-b1fee5985889?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=773&q=80");
+  background-position: center;
 }
