@@ -70,17 +70,20 @@ body {
   display: none;
   width: 20px;
   height: 3px;
-  background: #ecaf4e;
+  background: #130f0b;
+  border-radius: 10px;
   position: relative;
   cursor: pointer;
   transition: transform 0.2s;
 }
 
 .hamburger:before {
+  border-radius: 10px;
   top: -8px;
 }
 
 .hamburger:after {
+  border-radius: 10px;
   top: 8px;
 }
 
